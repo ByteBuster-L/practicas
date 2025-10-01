@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
-.padre{
-    display: flex;
-    width: 400px;
-    height: 200px;
+html, body{
+    height: 100%;
+    width: 100%;
 }
 
-.hijo{
-    background-color: aqua;
-    padding: 0.4rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
+canvas{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
