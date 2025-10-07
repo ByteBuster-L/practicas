@@ -6,9 +6,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="brayan.css">
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <style>
+        .caja-clic {
+            width: 200px;
+            height: 200px;
+            background-color: #f2f2;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="renderCanvas"></canvas>
-    <script src="main.js"></script>
+    <div class="caja-click">
+        <p>Hola da click</p>
+    </div>
+    <script>
+        const div = document.querySelector(".caja-click");
+        div.addEventListener("click", function(evento){
+            evento.target.style.backgroundColor = "red";
+        })
+
+        const coche = {
+            marca: "Toyota",
+            modelo: "Corolla",
+            año: 2023,
+            detalles: {
+                color: "Rojo",
+                puertas: 4
+            }
+        };
+        
+    </script>
+    <script src="objetos.js"></script>
 </body>
 </html>
